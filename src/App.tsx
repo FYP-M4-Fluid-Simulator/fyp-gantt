@@ -134,7 +134,7 @@ const GanttChart = () => {
       name: 'Eulerian Grid',
       stream: 'Simulator',
       start: 0.5,
-      duration: 0.5,
+      duration: 0.75,
       color: 'bg-blue-500',
       leads: ['Musab', 'Saad']
     },
@@ -142,8 +142,8 @@ const GanttChart = () => {
       id: 3,
       name: 'Solid SDF (Fluid-Solid Interaction)',
       stream: 'Simulator',
-      start: 1,
-      duration: 0.75,
+      start: 1.25,
+      duration: 0.6,
       color: 'bg-blue-600',
       leads: ['Musab', 'Saad']
     },
@@ -151,8 +151,8 @@ const GanttChart = () => {
       id: 4,
       name: 'Differentiability',
       stream: 'Simulator',
-      start: 1.75,
-      duration: 0.75,
+      start: 1.8,
+      duration: 0.7,
       color: 'bg-blue-700',
       leads: ['Musab', 'Saad']
     },
@@ -167,7 +167,7 @@ const GanttChart = () => {
     },
     {
       id: 6,
-      name: 'Setup & Run Existing Libraries (XLB or others)',
+      name: 'Setup & Run Existing Libraries (PhiFlow or others)',
       stream: 'Optimization',
       start: 0.25,
       duration: 0.5,
@@ -176,7 +176,7 @@ const GanttChart = () => {
     },
     {
       id: 7,
-      name: 'Parametrise Turbine Wing',
+      name: 'Parametrise Wind Turbine Airfoil',
       stream: 'Optimization',
       start: 0.75,
       duration: 0.5,
@@ -185,7 +185,7 @@ const GanttChart = () => {
     },
     {
       id: 8,
-      name: 'ASO on Existing (one wing) + XLB',
+      name: 'ASO on Existing (one airfoil) + PhiFlow',
       stream: 'Optimization',
       start: 1.25,
       duration: 0.5,
@@ -194,7 +194,7 @@ const GanttChart = () => {
     },
     {
       id: 9,
-      name: 'Parametrize Whole Shape',
+      name: 'Parametrize Other Airfoils',
       stream: 'Optimization',
       start: 1.75,
       duration: 0.5,
@@ -224,7 +224,7 @@ const GanttChart = () => {
       name: 'Integration (ASO & Simulator)',
       stream: 'Evaluation',
       start: 3.5,
-      duration: 0.75,
+      duration: 1,
       color: 'bg-green-500',
       leads: ['Meesum', 'Anas', 'Saad']
     },
@@ -232,7 +232,7 @@ const GanttChart = () => {
       id: 13,
       name: 'Run ASO on Our Own Simulator',
       stream: 'Optimization',
-      start: 4.25,
+      start: 4.5,
       duration: 0.5,
       color: 'bg-amber-500',
       leads: ['Anas', 'Meesum']
@@ -241,7 +241,7 @@ const GanttChart = () => {
       id: 14,
       name: 'Testing on Other Power Variances',
       stream: 'Optimization',
-      start: 4.75,
+      start: 5,
       duration: 1,
       color: 'bg-amber-600',
       leads: ['Everyone']
