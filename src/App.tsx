@@ -212,9 +212,18 @@ const GanttChart = () => {
     },
     {
       id: 11,
-      name: 'RANS w/ Differentiability',
+      name: 'Refining Simulator',
       stream: 'Simulator',
       start: 3.5,
+      duration: 1.2,
+      color: 'bg-blue-700',
+      leads: ['Musab', 'Saad']
+    },
+    {
+      id: 12,
+      name: 'RANS w/ Differentiability',
+      stream: 'Simulator',
+      start: 4.7,
       duration: 1,
       color: 'bg-blue-800',
       leads: ['Musab', 'Saad']
@@ -222,43 +231,52 @@ const GanttChart = () => {
     {
       id: 12,
       name: 'Integration (ASO & Simulator)',
-      stream: 'Evaluation',
+      stream: 'Team',
       start: 3.5,
       duration: 1,
-      color: 'bg-green-500',
+      color: 'bg-red-500',
       leads: ['Meesum', 'Anas', 'Saad']
     },
     {
       id: 13,
-      name: 'Run ASO on Our Own Simulator',
-      stream: 'Optimization',
-      start: 4.5,
+      name: 'Web App FE',
+      stream: 'Team',
+      start: 3.5,
       duration: 0.5,
-      color: 'bg-amber-500',
-      leads: ['Anas', 'Meesum']
+      color: 'bg-red-600',
+      leads: ['Anas']
     },
     {
       id: 14,
-      name: 'Testing on Other Power Variances',
-      stream: 'Optimization',
-      start: 5,
-      duration: 1,
-      color: 'bg-amber-600',
-      leads: ['Everyone']
+      name: 'Web App BE',
+      stream: 'Team',
+      start: 4,
+      duration: 0.7,
+      color: 'bg-red-600',
+      leads: ['Saad', 'Meesum', 'Anas']
     },
     {
       id: 15,
-      name: 'Validate on Other Sims',
-      stream: 'Evaluation',
-      start: 5.75,
+      name: 'Testing on Other Power Variances',
+      stream: 'Team',
+      start: 5,
       duration: 1,
       color: 'bg-red-500',
       leads: ['Everyone']
     },
     {
       id: 16,
+      name: 'Validate on Other Sims',
+      stream: 'Team',
+      start: 5.75,
+      duration: 1,
+      color: 'bg-red-500',
+      leads: ['Everyone']
+    },
+    {
+      id: 15,
       name: 'Final Documentation & Deliverables',
-      stream: 'Evaluation',
+      stream: 'Team',
       start: 6,
       duration: 1,
       color: 'bg-red-600',
@@ -320,7 +338,7 @@ const GanttChart = () => {
     }
   }, [dragInfo]);
 
-  const streams = ['Simulator', 'Optimization', 'Evaluation'];
+  const streams = ['Simulator', 'Optimization', 'Team'];
 
   // Calculate position for Kaavish I end marker (after December = after index 2)
   const kaavishIEndPosition = ((2.5 / months.length) * 100);
