@@ -216,7 +216,7 @@ const GanttChart = () => {
       stream: 'Simulator',
       start: 3.5,
       duration: 1.2,
-      color: 'bg-blue-700',
+      color: 'bg-blue-800',
       leads: ['Musab', 'Saad']
     },
     {
@@ -224,8 +224,8 @@ const GanttChart = () => {
       name: 'RANS w/ Differentiability',
       stream: 'Simulator',
       start: 4.7,
-      duration: 1,
-      color: 'bg-blue-800',
+      duration: 1.3,
+      color: 'bg-blue-900',
       leads: ['Musab', 'Saad']
     },
     {
@@ -233,17 +233,17 @@ const GanttChart = () => {
       name: 'Integration (ASO & Simulator)',
       stream: 'Team',
       start: 3.5,
-      duration: 1,
+      duration: 0.6,
       color: 'bg-red-500',
-      leads: ['Meesum', 'Anas', 'Saad']
+      leads: ['Meesum', 'Saad']
     },
     {
       id: 13,
       name: 'Web App FE',
       stream: 'Team',
       start: 3.5,
-      duration: 0.5,
-      color: 'bg-red-600',
+      duration: 0.6,
+      color: 'bg-red-500',
       leads: ['Anas']
     },
     {
@@ -251,35 +251,44 @@ const GanttChart = () => {
       name: 'Web App BE',
       stream: 'Team',
       start: 4,
-      duration: 0.7,
+      duration: 0.6,
       color: 'bg-red-600',
-      leads: ['Saad', 'Meesum', 'Anas']
+      leads: ['Saad', 'Meesum']
     },
-    {
+        {
       id: 15,
-      name: 'Testing on Other Power Variances',
+      name: 'Integration (FE & BE)',
       stream: 'Team',
-      start: 5,
+      start: 4.2,
       duration: 1,
-      color: 'bg-red-500',
+      color: 'bg-red-700',
       leads: ['Everyone']
     },
     {
       id: 16,
+      name: 'Testing on Other Power Variances',
+      stream: 'Team',
+      start: 5,
+      duration: 1,
+      color: 'bg-red-700',
+      leads: ['Anas', 'Meesum']
+    },
+    {
+      id: 17,
       name: 'Validate on Other Sims',
       stream: 'Team',
       start: 5.75,
       duration: 1,
-      color: 'bg-red-500',
+      color: 'bg-red-700',
       leads: ['Everyone']
     },
     {
-      id: 15,
+      id: 18,
       name: 'Final Documentation & Deliverables',
       stream: 'Team',
       start: 6,
       duration: 1,
-      color: 'bg-red-600',
+      color: 'bg-red-700',
       leads: ['Everyone']
     }
   ]);
